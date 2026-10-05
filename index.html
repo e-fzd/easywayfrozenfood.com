@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Easyway Cold Store</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>WELCOME TO EASYWAY</h1>
+
+        <p>Fresh & Quality Frozen Foods</p>
+
+    </header>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <section id="home">
+
+        <h1>Welcome to Easyway</h1>
+
+        <p>Fresh and quality frozen foods at affordable prices.</p>
+
+    </section>
+<section id="products">
+
+    <h2>Our Products</h2>
+
+    <p>Explore our selection of quality frozen foods.</p>
+
+</section>
+<div class="product">
+
+    <h3>Beef</h3>
+
+    <p>Quality beef for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 21 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+<button type="button" onclick="changeBeefQuantity(-1)">−</button>
+
+<span id="beefQuantity">0</span>
+
+<button type="button" onclick="changeBeefQuantity(1)">+</button>
+
+   <p>
+    Total: GHS <span id="beefTotal">0.00</span>
+</p>
+
+
+</div>
+
+</div>
+<div class="product">
+
+    <h3>Stomach</h3>
+
+    <p>Quality stomach for your home and food business needs.</p>
+
+    <p>Price: GHS 21 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeStomachQuantity(-1)">−</button>
+
+    <span id="stomachQuantity">0</span>
+
+    <button type="button" onclick="changeStomachQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="stomachTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Chicken Thigh Hard</h3>
+
+    <p>Quality hard chicken thighs for delicious meals.</p>
+
+    <p>Price: GHS 23 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeChickenThighHardQuantity(-1)">−</button>
+
+    <span id="chickenThighHardQuantity">0</span>
+
+    <button type="button" onclick="changeChickenThighHardQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="chickenThighHardTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Chicken Thigh Soft</h3>
+
+    <p>Quality soft chicken thighs for delicious meals.</p>
+
+    <p>Price: GHS 18.50 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeChickenThighSoftQuantity(-1)">−</button>
+
+    <span id="chickenThighSoftQuantity">0</span>
+
+    <button type="button" onclick="changeChickenThighSoftQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="chickenThighSoftTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Sausage</h3>
+
+    <p>Quality sausage for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 18 per pack</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeSausageQuantity(-1)">−</button>
+
+    <span id="sausageQuantity">0</span>
+
+    <button type="button" onclick="changeSausageQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="sausageTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Gizzard</h3>
+
+    <p>Quality gizzard for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 22 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeGizzardQuantity(-1)">−</button>
+
+    <span id="gizzardQuantity">0</span>
+
+    <button type="button" onclick="changeGizzardQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="gizzardTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Salmon</h3>
+
+    <p>Quality salmon for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 23.50 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeSalmonQuantity(-1)">−</button>
+
+    <span id="salmonQuantity">0</span>
+
+    <button type="button" onclick="changeSalmonQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="salmonTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Chicken Wings</h3>
+
+    <p>Quality chicken wings for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 30 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeChickenWingsQuantity(-1)">−</button>
+
+    <span id="chickenWingsQuantity">0</span>
+
+    <button type="button" onclick="changeChickenWingsQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="chickenWingsTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Turkey Wings</h3>
+
+    <p>Quality turkey wings for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 34 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeTurkeyWingsQuantity(-1)">−</button>
+
+    <span id="turkeyWingsQuantity">0</span>
+
+    <button type="button" onclick="changeTurkeyWingsQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="turkeyWingsTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="product">
+
+    <h3>Kpanla</h3>
+
+    <p>Quality Kpanla fish for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 21 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeKpanlaQuantity(-1)">−</button>
+
+    <span id="kpanlaQuantity">0</span>
+
+    <button type="button" onclick="changeKpanlaQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="kpanlaTotal">0.00</span>
+    </p>
+
+
+</div>
+<div class="cart-total">
+
+    <h2>Order Total</h2>
+
+    <p>
+        Grand Total: GHS <span id="grandTotal">0.00</span>
+    </p>
+
+</div>
+<div class="order-summary" id="orderSummary">
+
+    <h2>🛒 Your Order</h2>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+</div>
+
+<div class="customer-details">
+
+    <h2>Customer Details</h2>
+
+    <label>Name:</label>
+    <input type="text" id="customerName" placeholder="Enter your name">
+
+    <label>Phone Number:</label>
+    <input type="tel" id="customerPhone" placeholder="Enter your phone number">
+
+    <label>Delivery Location:</label>
+    <input type="text" id="deliveryLocation" placeholder="Enter your delivery location">
+
+</div>
+
+<button type="button" onclick="placeOrder()">Place Order</button>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📍 Location: Gbewa, Top Base, opposite Gewah Hospital</p>
+
+    <p>📞 Phone: 0550750602</p>
+
+  <a href="https://wa.me/233550750602" target="_blank" class="whatsapp-button">
+    💬 Chat with us on WhatsApp
+</a>
+
+</section>
+
+<script>
+let beefQuantity = 0;
+
+function changeBeefQuantity(amount) {
+
+    beefQuantity = beefQuantity + amount;
+
+    if (beefQuantity < 0) {
+        beefQuantity = 0;
+    }
+
+    document.getElementById("beefQuantity").textContent = beefQuantity;
+
+    calculateBeef();
+
+    updateCart();
+}
+
+function calculateBeef() {
+
+    const price = 21;
+
+    const total = price * beefQuantity;
+
+    document.getElementById("beefTotal").textContent = total;
+
+    calculateGrandTotal();
+}
+
+/* Stomach code */
+
+let stomachQuantity = 0;
+
+function changeStomachQuantity(amount) {
+
+    stomachQuantity = stomachQuantity + amount;
+
+    if (stomachQuantity < 0) {
+        stomachQuantity = 0;
+    }
+
+    document.getElementById("stomachQuantity").textContent = stomachQuantity;
+
+        calculateStomach();
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+function calculateStomach() {
+
+    const price = 21;
+
+    const total = price * stomachQuantity;
+
+    document.getElementById("stomachTotal").textContent = total;
+
+}
+let chickenThighHardQuantity = 0;
+
+function changeChickenThighHardQuantity(amount) {
+
+    chickenThighHardQuantity += amount;
+
+    if (chickenThighHardQuantity < 0) {
+        chickenThighHardQuantity = 0;
+    }
+
+    document.getElementById("chickenThighHardQuantity").textContent = chickenThighHardQuantity;
+
+    const total = 23 * chickenThighHardQuantity;
+
+    document.getElementById("chickenThighHardTotal").textContent = total;
+    
+        calculateGrandTotal();
+
+        updateCart();
+}
+
+document.getElementById("chickenThighHardQuantity").textContent = chickenThighHardQuantity;
+document.getElementById("chickenThighHardTotal").textContent = 23;
+
+let chickenThighSoftQuantity = 0;
+
+function changeChickenThighSoftQuantity(amount) {
+
+    chickenThighSoftQuantity += amount;
+
+    if (chickenThighSoftQuantity < 0) {
+        chickenThighSoftQuantity = 0;
+    }
+
+    document.getElementById("chickenThighSoftQuantity").textContent = chickenThighSoftQuantity;
+
+    const total = 18.5 * chickenThighSoftQuantity;
+
+    document.getElementById("chickenThighSoftTotal").textContent = total.toFixed(2);
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("chickenThighSoftQuantity").textContent = chickenThighSoftQuantity;
+document.getElementById("chickenThighSoftTotal").textContent = "18.50";
+
+let sausageQuantity = 0;
+
+function changeSausageQuantity(amount) {
+
+    sausageQuantity += amount;
+
+    if (sausageQuantity < 0) {
+        sausageQuantity = 0;
+    }
+
+    document.getElementById("sausageQuantity").textContent = sausageQuantity;
+
+    const total = 18 * sausageQuantity;
+
+    document.getElementById("sausageTotal").textContent = total;
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("sausageQuantity").textContent = sausageQuantity;
+document.getElementById("sausageTotal").textContent = 18;
+
+let gizzardQuantity = 0;
+
+function changeGizzardQuantity(amount) {
+
+    gizzardQuantity += amount;
+
+    if (gizzardQuantity < 0) {
+        gizzardQuantity = 0;
+    }
+
+    document.getElementById("gizzardQuantity").textContent = gizzardQuantity;
+
+    const total = 22 * gizzardQuantity;
+
+    document.getElementById("gizzardTotal").textContent = total;
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("gizzardQuantity").textContent = gizzardQuantity;
+document.getElementById("gizzardTotal").textContent = 22;
+
+let salmonQuantity = 0;
+
+function changeSalmonQuantity(amount) {
+
+    salmonQuantity += amount;
+
+    if (salmonQuantity < 0) {
+        salmonQuantity = 0;
+    }
+
+    document.getElementById("salmonQuantity").textContent = salmonQuantity;
+
+    const total = 23.5 * salmonQuantity;
+
+    document.getElementById("salmonTotal").textContent = total.toFixed(2);
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("salmonQuantity").textContent = salmonQuantity;
+document.getElementById("salmonTotal").textContent = "23.50";
+
+let chickenWingsQuantity = 0;
+
+function changeChickenWingsQuantity(amount) {
+
+    chickenWingsQuantity += amount;
+
+    if (chickenWingsQuantity < 0) {
+        chickenWingsQuantity = 0;
+    }
+
+    document.getElementById("chickenWingsQuantity").textContent = chickenWingsQuantity;
+
+    const total = 30 * chickenWingsQuantity;
+
+    document.getElementById("chickenWingsTotal").textContent = total;
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("chickenWingsQuantity").textContent = chickenWingsQuantity;
+document.getElementById("chickenWingsTotal").textContent = 30;
+
+let turkeyWingsQuantity = 0;
+
+function changeTurkeyWingsQuantity(amount) {
+
+    turkeyWingsQuantity += amount;
+
+    if (turkeyWingsQuantity < 0) {
+        turkeyWingsQuantity = 0;
+    }
+
+    document.getElementById("turkeyWingsQuantity").textContent = turkeyWingsQuantity;
+
+    const total = 34 * turkeyWingsQuantity;
+
+    document.getElementById("turkeyWingsTotal").textContent = total;
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("turkeyWingsQuantity").textContent = turkeyWingsQuantity;
+document.getElementById("turkeyWingsTotal").textContent = 34;
+
+let kpanlaQuantity = 0;
+
+function changeKpanlaQuantity(amount) {
+
+    kpanlaQuantity += amount;
+
+    if (kpanlaQuantity < 0) {
+        kpanlaQuantity = 0;
+    }
+
+    document.getElementById("kpanlaQuantity").textContent = kpanlaQuantity;
+
+    const total = 21 * kpanlaQuantity;
+
+    document.getElementById("kpanlaTotal").textContent = total;
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+document.getElementById("kpanlaQuantity").textContent = kpanlaQuantity;
+document.getElementById("kpanlaTotal").textContent = 21;
+
+function calculateGrandTotal() {
+
+    const grandTotal =
+        (21 * beefQuantity) +
+        (21 * stomachQuantity) +
+        (23 * chickenThighHardQuantity) +
+        (18.5 * chickenThighSoftQuantity) +
+        (18 * sausageQuantity) +
+        (22 * gizzardQuantity) +
+        (23.5 * salmonQuantity) +
+        (30 * chickenWingsQuantity) +
+        (34 * turkeyWingsQuantity) +
+        (21 * kpanlaQuantity);
+
+    document.getElementById("grandTotal").textContent = grandTotal.toFixed(2);
+}
+
+// calculateGrandTotal();
+
+function updateCart() {
+
+    const cartItems = document.getElementById("cartItems");
+
+    let items = "";
+
+    if (beefQuantity > 0) {
+        items += "<p>Beef × " + beefQuantity + " — GHS " +
+        (21 * beefQuantity).toFixed(2) + "</p>";
+    }
+
+    if (stomachQuantity > 0) {
+        items += "<p>Stomach × " + stomachQuantity + " — GHS " +
+        (21 * stomachQuantity).toFixed(2) + "</p>";
+    }
+
+    if (chickenThighHardQuantity > 0) {
+        items += "<p>Chicken Thigh Hard × " + chickenThighHardQuantity + " — GHS " +
+        (23 * chickenThighHardQuantity).toFixed(2) + "</p>";
+    }
+    if (chickenThighSoftQuantity > 0) {
+        items += "<p>Chicken Thigh Soft × " + chickenThighSoftQuantity + " — GHS " +
+        (18.5 * chickenThighSoftQuantity).toFixed(2) + "</p>";
+    }
+
+    if (sausageQuantity > 0) {
+        items += "<p>Sausage × " + sausageQuantity + " — GHS " +
+        (18 * sausageQuantity).toFixed(2) + "</p>";
+    }
+
+    if (gizzardQuantity > 0) {
+    items += "<p>Gizzard × " + gizzardQuantity + " — GHS " +
+        (22 * gizzardQuantity).toFixed(2) + "</p>";
+    }
+
+    if (salmonQuantity > 0) {
+        items += "<p>Salmon × " + salmonQuantity + " — GHS " +
+        (23.5 * salmonQuantity).toFixed(2) + "</p>";
+    }
+
+    if (chickenWingsQuantity > 0) {
+        items += "<p>Chicken Wings × " + chickenWingsQuantity + " — GHS " +
+        (30 * chickenWingsQuantity).toFixed(2) + "</p>";
+    }
+
+    if (turkeyWingsQuantity > 0) {
+        items += "<p>Turkey Wings × " + turkeyWingsQuantity + " — GHS " +
+        (34 * turkeyWingsQuantity).toFixed(2) + "</p>";
+    }
+
+    if (kpanlaQuantity > 0) {
+        items += "<p>Kpanla × " + kpanlaQuantity + " — GHS " +
+        (21 * kpanlaQuantity).toFixed(2) + "</p>";
+    }
+    if (items === "") {
+        items = "<p>Your cart is empty.</p>";
+    }
+
+    cartItems.innerHTML = items;
+}
+
+    function placeOrder() {
+
+    if (
+        beefQuantity === 0 &&
+        stomachQuantity === 0 &&
+        chickenThighHardQuantity === 0 &&
+        chickenThighSoftQuantity === 0 &&
+        sausageQuantity === 0 &&
+        gizzardQuantity === 0 &&
+        salmonQuantity === 0 &&
+        chickenWingsQuantity === 0 &&
+        turkeyWingsQuantity === 0 &&
+        kpanlaQuantity === 0
+    ) {
+        alert("Please select at least one product before placing your order.");
+        return;
+    }
+
+    const name = document.getElementById("customerName").value;
+    const phone = document.getElementById("customerPhone").value;
+    const location = document.getElementById("deliveryLocation").value;
+
+    if (name === "" || phone === "" || location === "") {
+        alert("Please enter your name, phone number, and delivery location.");
+        return;
+    }
+
+    const message =
+    "Hello Easyway, I want to place an order.%0A%0A" +
+    "Customer Name: " + name + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Delivery Location: " + location + "%0A%0A" +
+    "Order:%0A" +
+    document.getElementById("cartItems").innerText + "%0A%0A" +
+    "Grand Total: GHS " + document.getElementById("grandTotal").innerText;
+
+    const whatsappNumber = "233550750602";
+
+    const whatsappURL =
+    "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+window.open(whatsappURL, "_blank");
+
+alert("Your order is ready. Please send the WhatsApp message to complete your order.");
+
+}
+</script>
+
+<footer>
+
+    <h3>Easyway</h3>
+
+    <p>Quality frozen foods at affordable prices.</p>
+
+    <p>© 2026 Easyway. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
