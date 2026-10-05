@@ -789,15 +789,20 @@ function updateCart() {
     document.getElementById("cartItems").innerText + "%0A%0A" +
     "Grand Total: GHS " + document.getElementById("grandTotal").innerText;
 
-    const whatsappNumber = "233550750602";
+    const whatsappNumber1 = "233550750602";
+const whatsappNumber2 = "233535110163";
 
-    const whatsappURL =
-    "https://wa.me/" + whatsappNumber + "?text=" + message;
+const whatsappURL1 =
+"https://wa.me/" + whatsappNumber1 + "?text=" + message;
 
-window.open(whatsappURL, "_blank");
+const whatsappURL2 =
+"https://wa.me/" + whatsappNumber2 + "?text=" + message;
 
-alert("Your order is ready. Please send the WhatsApp message to complete your order.");
+window.open(whatsappURL1, "_blank");
 
+setTimeout(function() {
+    window.open(whatsappURL2, "_blank");
+}, 1000);
 }
 </script>
 
