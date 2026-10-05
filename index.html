@@ -268,6 +268,48 @@
 
 
 </div>
+<div class="product">
+
+    <h3>Drum Sticks</h3>
+
+    <p>Quality drum sticks for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 21 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeDrumSticksQuantity(-1)">−</button>
+
+    <span id="drumSticksQuantity">0</span>
+
+    <button type="button" onclick="changeDrumSticksQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="drumSticksTotal">0.00</span>
+    </p>
+
+</div>
+<div class="product">
+
+    <h3>Chicken Back</h3>
+
+    <p>Quality chicken back for your home, restaurant, and business needs.</p>
+
+    <p>Price: GHS 13 per ½ kg</p>
+
+    <label>Quantity:</label>
+
+    <button type="button" onclick="changeChickenBackQuantity(-1)">−</button>
+
+    <span id="chickenBackQuantity">0</span>
+
+    <button type="button" onclick="changeChickenBackQuantity(1)">+</button>
+
+    <p>
+        Total: GHS <span id="chickenBackTotal">0.00</span>
+    </p>
+
+</div>
 <div class="cart-total">
 
     <h2>Order Total</h2>
@@ -310,11 +352,16 @@
 
     <p>📍 Location: Gbewa, Top Base, opposite Gewah Hospital</p>
 
-    <p>📞 Phone: 0550750602</p>
+    <p>📞 Phone: 0550750602 / 0535110163</p>
 
-  <a href="https://wa.me/233550750602" target="_blank" class="whatsapp-button">
-    💬 Chat with us on WhatsApp
+ <a href="https://wa.me/233550750602" target="_blank" class="whatsapp-button">
+    💬 WhatsApp: 0550750602
 </a>
+
+<a href="https://wa.me/233535110163" target="_blank" class="whatsapp-button">
+    💬 WhatsApp: 0535110163
+</a>
+
 
 </section>
 
@@ -569,6 +616,48 @@ function changeKpanlaQuantity(amount) {
 document.getElementById("kpanlaQuantity").textContent = kpanlaQuantity;
 document.getElementById("kpanlaTotal").textContent = 21;
 
+let drumSticksQuantity = 0;
+
+function changeDrumSticksQuantity(amount) {
+
+    drumSticksQuantity += amount;
+
+    if (drumSticksQuantity < 0) {
+        drumSticksQuantity = 0;
+    }
+
+    document.getElementById("drumSticksQuantity").textContent = drumSticksQuantity;
+
+    const total = 21 * drumSticksQuantity;
+
+    document.getElementById("drumSticksTotal").textContent = total.toFixed(2);
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
+let chickenBackQuantity = 0;
+
+function changeChickenBackQuantity(amount) {
+
+    chickenBackQuantity += amount;
+
+    if (chickenBackQuantity < 0) {
+        chickenBackQuantity = 0;
+    }
+
+    document.getElementById("chickenBackQuantity").textContent = chickenBackQuantity;
+
+    const total = 13 * chickenBackQuantity;
+
+    document.getElementById("chickenBackTotal").textContent = total.toFixed(2);
+
+    calculateGrandTotal();
+
+    updateCart();
+}
+
 function calculateGrandTotal() {
 
     const grandTotal =
@@ -581,7 +670,9 @@ function calculateGrandTotal() {
         (23.5 * salmonQuantity) +
         (30 * chickenWingsQuantity) +
         (34 * turkeyWingsQuantity) +
-        (21 * kpanlaQuantity);
+        (21 * kpanlaQuantity) +
+        (21 * drumSticksQuantity) +
+        (13 * chickenBackQuantity); 
 
     document.getElementById("grandTotal").textContent = grandTotal.toFixed(2);
 }
@@ -638,10 +729,21 @@ function updateCart() {
         (34 * turkeyWingsQuantity).toFixed(2) + "</p>";
     }
 
-    if (kpanlaQuantity > 0) {
-        items += "<p>Kpanla × " + kpanlaQuantity + " — GHS " +
-        (21 * kpanlaQuantity).toFixed(2) + "</p>";
+   if (kpanlaQuantity > 0) {
+    items += "<p>Kpanla × " + kpanlaQuantity + " — GHS " +
+    (21 * kpanlaQuantity).toFixed(2) + "</p>";
     }
+
+    if (drumSticksQuantity > 0) {
+    items += "<p>Drum Sticks × " + drumSticksQuantity + " — GHS " +
+    (21 * drumSticksQuantity).toFixed(2) + "</p>";
+    }
+
+    if (chickenBackQuantity > 0) {
+    items += "<p>Chicken Back × " + chickenBackQuantity + " — GHS " +
+    (13 * chickenBackQuantity).toFixed(2) + "</p>";
+    }
+
     if (items === "") {
         items = "<p>Your cart is empty.</p>";
     }
@@ -661,7 +763,9 @@ function updateCart() {
         salmonQuantity === 0 &&
         chickenWingsQuantity === 0 &&
         turkeyWingsQuantity === 0 &&
-        kpanlaQuantity === 0
+        kpanlaQuantity === 0 &&
+        drumSticksQuantity === 0 &&
+        chickenBackQuantity === 0
     ) {
         alert("Please select at least one product before placing your order.");
         return;
